@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>ALMA M2 2015</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+  </head>
+  <body>
+    <div class="container">
+      <h1>ALMA M2 2015 Project</h1>
+      <p>
+        Start the project with the following tasks:
+      </p>
+      <ul>
+        <li>Create a Github account (using as a username something professional like the first letter of your first name and your family name)</li>
+        <li>One member of your team, your team leader, will then create a Github organization with the name "alma2015" followed by the first 3 letters of the family name of the members of your team</li>
+        <li>Add the accounts of all the members of your team to the organization as members along with my account (sbegaudeau)</li>
+        <li>The team leader will create a repository named like your organization in the organisation (not in her/his profile). This repository will act as the main repository</li>
+        <li>One member of the team will create an issue in the main repository with the tag "project management" (previously created by the team leader) to request the addition of a README.md file describing the project (only a couple of lines)</li>
+        <li>One of the member of the team will create a file named README.md at the root of the repository and she/he will push it to her/his clone of the main repository. Then using a pull request, she/he will submit a review to the main repository</li>
+        <li>The member of the team who has created the issue will review the pull request and she/he will request an improvement to the pull request to add the copyright of the project. After having an updated version of the pull request, if it is valid, the pull request will be accepted</li>
+        <li>Repeat for the files LICENSE.md and CONTRIBUTE.md by changing the members of the team involved in creating the issue and creating the commit. Those files should respectively contain the license of the project (EPL v1.0) and a small contribution guide</li>
+      </ul>
+      <p>
+        When you have to realize one of the following task, make sure to open an issue using, as a title, a user story describing the task. Then, when you will write your commit message do not forget to reference the proper issue using something like "Bug #1".
+      </p>
+      <ul>
+        <li>You will create a regular Eclipse project named fr.univnantes.alma.oomph in a folder named resources of your Git repository</li>
+        <li>Then, using the setup file of the project Acceleo, you will create a setup file named like your organisation in this project</li>
+        <li>The setup file should let a contributor create an Eclipse instance with your code checked out, this project imported in the workspace in a working set named Resources</li>
+        <li>This setup file will be improved during the rest of the lesson</li>
+      </ul>
+      <p>Static analysis</p>
+      <ul>
+        <li>You will need to create a new issue to update the Oomph setup model to include Checkstyle</li>
+        <li>You will also need to create a project named fr.univnantes.alma.resources in the resources folder with a Checkstyle configuration file inside (use the same as the Acceleo project)</li>
+        <li>This new project should also be imported in the Resources working set by your setup model</li>
+        <li>Of course, another member of your team should include Findbugs in your setup file. The other development tools will be seen during the rest of the course</li>
+      </ul>
+      <p>Target Platform</p>
+      <ul>
+        <li>Install the target platform DSL in the setup file</li>
+        <li>Create a target platform file with the same content as mine and generate the target platform file</li>
+        <li>Update the setup file to reference the target platform file</li>
+        <li>Create a folder named bundle with a copy of my web server inside</li>
+        <li>Test your web server</li>
+      </ul>
+    </div>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  </body>
+</html>
