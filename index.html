@@ -27,24 +27,26 @@
       </p>
       <ul>
         <li>You will create a regular Eclipse project named fr.univnantes.alma.oomph in a folder named resources of your Git repository</li>
-        <li>Then, using the setup file of the project Acceleo, you will create a setup file named like your organisation in this project</li>
-        <li>The setup file should let a contributor create an Eclipse instance with your code checked out, this project imported in the workspace in a working set named Resources</li>
-        <li>This setup file will be improved during the rest of the lesson</li>
+        <li>Then, using the <a href="https://git.eclipse.org/c/acceleo/org.eclipse.acceleo.git/tree/releng/org.eclipse.acceleo.releng">setup file</a> of the project Acceleo as an inspiration, you will create a setup file named like your organisation in this project.</li>
+        <li>The setup file should let a contributor create an Eclipse instance with your code checked out, the project fr.univnantes.alma.oomph imported in the workspace in a working set named Resources</li>
+        <li>Your setup file should only import your code properly, it should not configure anymore tools (you may have to remove things from the Acceleo setup file to add them back later on in additionals commit, it's normal)</li>
+        <li>This setup file will be improved during the rest of the lesson.</li>
       </ul>
       <p>Static analysis</p>
       <ul>
         <li>You will need to create a new issue to update the Oomph setup model to include Checkstyle</li>
-        <li>You will also need to create a project named fr.univnantes.alma.resources in the resources folder with a Checkstyle configuration file inside (use the same as the Acceleo project)</li>
+        <li>You will also need to create a project named fr.univnantes.alma.resources in the resources folder with a Checkstyle configuration file inside (use the <a href="https://git.eclipse.org/c/acceleo/org.eclipse.acceleo.git/tree/features/org.eclipse.acceleo-feature/codestyle">same</a> as the Acceleo project)</li>
         <li>This new project should also be imported in the Resources working set by your setup model</li>
-        <li>Of course, another member of your team should include Findbugs in your setup file. The other development tools will be seen during the rest of the course</li>
+        <li>Of course, another member of your team should include Findbugs in your setup file.</li>
       </ul>
       <p>Target Platform</p>
       <ul>
-        <li>Install the target platform DSL in the setup file</li>
-        <li>Create a target platform file with the same content as mine and generate the target platform file</li>
-        <li>Update the setup file to reference the target platform file</li>
-        <li>Create a folder named bundle with a copy of my web server inside</li>
-        <li>Test your web server</li>
+        <li>Install the <a href="https://github.com/mbarbero/fr.obeo.releng.targetplatform">target platform DSL</a> in the setup file</li>
+        <li>Create a target platform file with the same content as <a href="https://github.com/sbegaudeau/alma-m2-2015/blob/gh-pages/fr.univnantes.alma.target/mars.tpd">mine</a> and generate the target platform file</li>
+        <li>Update the setup file to reference the target platform file (Ctrl+R)</li>
+        <li>Create a folder named bundles with a copy of <a href="https://github.com/sbegaudeau/alma-m2-2015/tree/gh-pages/fr.univnantes.alma.server">my web server</a> inside</li>
+        <li>Test your web server using the URL http://localhost:8080/api.</li>
+        <li>You have now a component based server running on top of OSGi against a platform specified using a target platform</li>
       </ul>
     </div>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
