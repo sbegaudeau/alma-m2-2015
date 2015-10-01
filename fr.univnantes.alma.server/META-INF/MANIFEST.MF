@@ -1,0 +1,15 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: ALMA Server
+Bundle-SymbolicName: fr.univnantes.alma.server;singleton:=true
+Bundle-Version: 1.0.0.qualifier
+Bundle-Activator: fr.univnantes.alma.server.internal.Activator
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Bundle-ActivationPolicy: lazy
+Import-Package: javax.servlet;version="3.1.0",
+ javax.servlet.http;version="3.1.0",
+ org.eclipse.equinox.app;version="[1.1.0,1.2.0)",
+ org.eclipse.equinox.http.jetty;version="[1.1.0,1.2.0)",
+ org.osgi.framework;version="[1.8.0,1.9.0)",
+ org.osgi.service.http;version="[1.2.1,2.0.0)",
+ org.osgi.util.tracker;version="[1.5.1,1.6.0)"
