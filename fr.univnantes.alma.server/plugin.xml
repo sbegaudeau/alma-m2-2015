@@ -2,7 +2,7 @@
 <?eclipse version="3.4"?>
 <plugin>
    <extension
-         id="ALMAServer"
+         id="application"
          point="org.eclipse.core.runtime.applications">
       <application
             cardinality="singleton-global"
@@ -13,5 +13,12 @@
          </run>
       </application>
    </extension>
-
+   <extension
+         id="product"
+         point="org.eclipse.core.runtime.products">
+      <product
+            application="fr.univnantes.alma.server.application"
+            name="ALMAServer">
+      </product>
+   </extension>
 </plugin>

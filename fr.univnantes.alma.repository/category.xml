@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<site>
+   <feature url="features/fr.univnantes.alma.feature_1.0.0.qualifier.jar" id="fr.univnantes.alma.feature" version="1.0.0.qualifier">
+      <category name="fr.univnantes.alma"/>
+   </feature>
+   <category-def name="fr.univnantes.alma" label="AMLA"/>
+</site>
