@@ -26,9 +26,9 @@
         When you have to realize one of the following task, make sure to open an issue using, as a title, a user story describing the task. Then, when you will write your commit message do not forget to reference the proper issue using something like "Bug #1".
       </p>
       <ul>
-        <li>You will create a regular Eclipse project named fr.univnantes.alma.oomph in a folder named resources of your Git repository</li>
+        <li>You will create a regular Eclipse project named fr.univnantes.alma.oomph in a folder named resources of your Git repository.</li>
         <li>Then, using the <a href="https://git.eclipse.org/c/acceleo/org.eclipse.acceleo.git/tree/releng/org.eclipse.acceleo.releng">setup file</a> of the project Acceleo as an inspiration, you will create a setup file named like your organisation in this project.</li>
-        <li>First test the setup file of Acceleo to retrieve a fully configured Eclipse for Acceleo using the <a href="https://www.eclipse.org/downloads/">Eclipse Installer</a> (Oomph). USE ECLIPSE MARS TO EDIT THE SETUP MODEL!</li>
+        <li>First test the setup file of Acceleo to retrieve a fully configured Eclipse for Acceleo using the <a href="https://www.eclipse.org/downloads/">Eclipse Installer</a> (Oomph). USE ECLIPSE MARS TO EDIT THE SETUP MODEL! To install an Acceleo development environment, launch the Eclipse Installer (Oomph), select a version of Eclipse, click next and drag and drop the Acceleo setup file. Double click this setup file in the interface and continue the installation.</li>
         <li>The setup file should let a contributor create an Eclipse instance with your code checked out, the project fr.univnantes.alma.oomph imported in the workspace in a working set named Resources</li>
         <li>Your setup file should only import your code properly, it should not configure anymore tools (you may have to remove things from the Acceleo setup file to add them back later on in additionals commit, it's normal)</li>
         <li>This setup file will be improved during the rest of the lesson.</li>
@@ -48,6 +48,13 @@
         <li>Create a folder named bundles with a copy of <a href="https://github.com/sbegaudeau/alma-m2-2015/tree/gh-pages/fr.univnantes.alma.server">my web server</a> inside</li>
         <li>Test your web server using the URL http://localhost:8080/api.</li>
         <li>You have now a component based server running on top of OSGi against a platform specified using a target platform</li>
+      </ul>
+      <p>Build</p>
+      <ul>
+        <li>Copy all the other projects from my github repository into your repository to have a fully working build.</li>
+        <li>Try the build using the command mvn clean verify in the "releng" project.</li>
+        <li>Setup the build of your repository on Travis CI</li>
+        <li>Make sure that your build can publish the artifacts of your release on a Github release in your project.</li>
       </ul>
     </div>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
