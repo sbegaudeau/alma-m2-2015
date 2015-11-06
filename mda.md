@@ -1,0 +1,86 @@
+# Instructions
+
+During this project, you will have to create a Sirius-based designer including multiple viewpoints and representations. You will have to use the metamodel, already defined, in the project fr.univnantes.alma.angular that you will be able to find in this repository.
+
+## Getting started
+
+Create a new Sirius Specification Project named fr.univnantes.alma.angular.design. This project will contain the configuration of your designer. Create another project, a Modeling Project this time, named fr.univnantes.alma.angular.modeling. In this project, you will create a model, using the Angular metamodel and you will manipulate it using the designer that you will create.
+
+## Creating a model
+
+Open the file angular.ecore located in the project fr.univnantes.alma.angular and right click on the root concept named Project. Select the action "Create a dynamic instance" and save the model in a file named "angular.xmi" at the root of the modeling project (fr.univnantes.alma.angular.modeling). Now that you have created an empty model from an ecore metamodel.
+
+## Architecture viewpoint
+
+In this project, you will create at least two viewpoints, the first one will be dedicated to the technical information of your project. Create in the file with the extension '.odesign' in the Viewpoint Specification Project that you have created (fr.univnantes.alma.angular.design) a new viewpoint named "Architecture". This viewpoint should support files with the extension "xmi". Beneath this viewpoint, create a diagram named Class Diagram.
+
+### Class Diagram
+
+Your Class Diagram should reference the metamodel angular.ecore from the workspace in order to tell Eclipse Sirius not to care about other potential metamodels. Your Class Diagram should use the domain class angular.Module since it represents an ES6 module which can contain various pieces of code (including Classes). Then you will create inside the default layer of your Class Diagram named "Class Diagram", a list Container for the concept angular.ESClass named "CD_Class".
+
+#### Style
+
+In order to create a proper class diagram, use a gradient as the style. Make sure that your gradient is a gradient from white to light blue. Make sure that your gradient style uses rounded corner with an arc of 5px for the height and the width of the corners. Finally, use "12" as the height computation expression and "15" as the width computation expression. In order to have a nice diagram, you need to make sure that most of the elements with a similar role have the same style and size.
+
+In your designer, create a Palette named "Default Colors" and inside create an user defined color named "Default Class". Use the following RGB values for the color (210, 228, 252). Now modify your gradient to use this color instead of the light blue.
+
+Now right click on your modeling project and select the Architecture viewpoint. Double click on your angular.xmi file and use the tree-based editor from EMF to create inside of the project various modules and classes. Once you have created a meaningful example, right click on a module to create an instance of your Class Diagram.
+
+The Class Diagram should display the classes in your module.
+
+#### Container Creation Tool
+
+In your layer, create a new section named "Elements" with a container creation tool name "New ESClass" inside. This tool should let you create the mapping previously defined. In the begin step of the operation change the context of the operation using the expression "var:container". Your tool should then create a new instance. The creation of an ESClass can only be realized in a module, as such it can only be created in the feature moduleElements of a module. Make sure that your tool create the new instance of "angular.ESClass" in the reference "moduleElements". Then add an operation to set the name of the newly created object to "NewClass".
+
+Test your tool in the diagram to ensure that it works.
+
+#### Direct Edit
+
+Create a section in your Class Diagram named Behavior Tools. Inside, create a direct edit tool named "Classifier Direct Edit" which will be used to edit the name of the mapping "CD_Class". In the begin operation of this direct edit tool, you will only use a "Set" operation to modify the value of the feature "name" with the content of the mask variable with the value expression "var:arg0".
+
+You can now modify the name of a class in your diagram just by typing a new name once the class has been selected.
+
+#### Java Service
+
+Open the file MANIFEST.MF and go to the dependencies tab to add a dependency to the OSGi bundle "com.google.guava". Then in the source folder "src" of your project, create a Java class named NamingServices in the package fr.univnantes.alma.angular.internal.services. In this Java class, create a method named "toCamelCase" using as parameters, first an EObject (from org.eclipse.emf.ecore) and a String (from java.lang) with the following code.
+
+```
+public String toCamelCase(EObject eObject, String word) {
+	if (word != null) {
+		StringBuffer buffer = new StringBuffer(word.length());
+		for (String part : Splitter.on(CharMatcher.WHITESPACE).trimResults().split(word)) {
+			buffer.append(toU1Case(part));
+		}
+		return buffer.toString();
+	}
+	return word;
+}
+```
+
+This code will use Google Guava in order to convert the word in camel case. You can now modify your direct edit tool to replace the value expression "var:arg0" with the expression "service:toCamelCase(arg0)". Add a Java extension to your viewpoint using the qualified name of your Java class (fr.univnantes.alma.angular.internal.services.NamingServices). You should now be able to type "Great abstract class" as the name of a Class using the direct edit and see it transformed to "GreatAbstractClass".
+
+#### Conditional style
+
+Now create a conditional style under your class mapping. You will use the predicate expression "feature:abstract", used to indicate that the conditional style should be used if the property "abstract" of the domain class of your mapping (in our case angular.ESClass) has the value "true". Create another color named "Abstract Class" in your Palette with the following values (240, 216, 216). Under this conditional style, copy the style that you have created before but this time change the color to have a gradient from white to the color "Abstract Class"
+
+#### Submappings
+
+Now you will create child nodes for the Class. For that create two child nodes mapping using the domain class angular.Field for the first one and angular.Function for the second one. Add a square style to those nodes. Create in the "Elements" section two new node creation tools to create a field or a function in a class.
+
+#### Label
+
+Edit the label of the Field and the Function mapping to display the name and the type of the field and the name, type and parameters of the function. Add two direct edit tools to edit the field and function.
+
+#### Relation-based edges
+
+Create a new relation-based in your layer named Extends to show that a class extends another class (use the target finder expression "feature:extends"). Add a new tool in the Elements section in order to make a class extend another one.
+
+### Explorer Diagram
+
+### Components Diagram
+
+## Review viewpoint
+
+### Documentation table
+
+## Not synchronized Diagram
