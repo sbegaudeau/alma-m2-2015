@@ -85,11 +85,23 @@ Create the necessary delete tools to be able to delete the class, one of its fie
 
 The explorer diagram will be used to view the structure of the project. This diagram will be created on a domain class "angular.Container" and it will display using node mappings the folders, the modules and the pages contained in one folder (use semantic candidates expression like "feature:pages", "feature:folders", "feature:").
 
-Copy the icons available in the project fr.univnantes.alma.angular into the Viewpoint Specification Project and use them as the style of your folders, modules and pages.
+Copy the icons available in the project fr.univnantes.alma.angular into the Viewpoint Specification Project and use them as the style of your folders, modules and pages. Make sure to use "15" as your size computation expression in order to set the size of your images.
+
+Use a conditional style to use the empty folder icon if a folder does not have any pages or modules (use something like "aql:self.pages.size() + self.modules.size() = 0" as the predicate expression).
 
 #### Representation Creation Tool
 
+Create a representation creation tool in your explorer diagram in order to create a Class Diagram by right clicking on a Module mapping in your Explorer diagram.
+
 #### Representation Navigation Tool
+
+Create a new tool to navigate to an existing Class Diagram from a module mapping in the explorer diagram
+
+#### Behavior tool
+
+Create a double click tool for the mapping folder. In the begin part of this tool, add a navigation operation to navigate to an Explorer Diagram. Make sure that this diagram will be created if it does not exist.
+
+You should not be able to easily create new folders, pages and modules in your diagram and navigate inside easily.
 
 ### Components Diagram
 
