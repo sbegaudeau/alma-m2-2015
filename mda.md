@@ -8,7 +8,7 @@ Create a new Sirius Specification Project named fr.univnantes.alma.angular.desig
 
 ## Creating a model
 
-Open the file angular.ecore located in the project fr.univnantes.alma.angular and right click on the root concept named Project. Select the action "Create a dynamic instance" and save the model in a file named "angular.xmi" at the root of the modeling project (fr.univnantes.alma.angular.modeling). Now that you have created an empty model from an ecore metamodel.
+Open the file angular.ecore located in the project fr.univnantes.alma.angular and right click on the root concept named Project. Select the action "Create a dynamic instance" and save the model in a file named "angular.xmi" at the root of the modeling project (fr.univnantes.alma.angular.modeling). Now that you have created an empty model from an ecore metamodel, you can open it using "Open With" with the "Sample Reflective Ecore Model Editor" to edit it using a tree-based approach.
 
 ## Architecture viewpoint
 
