@@ -75,7 +75,21 @@ Edit the label of the Field and the Function mapping to display the name and the
 
 Create a new relation-based in your layer named Extends to show that a class extends another class (use the target finder expression "feature:extends"). Add a new tool in the Elements section in order to make a class extend another one.
 
+You now have a very basic Class diagram, we will start the creation of other diagram.
+
+#### Deletion
+
+Create the necessary delete tools to be able to delete the class, one of its field, one of its function or the extends relationship.
+
 ### Explorer Diagram
+
+The explorer diagram will be used to view the structure of the project. This diagram will be created on a domain class "angular.Container" and it will display using node mappings the folders, the modules and the pages contained in one folder (use semantic candidates expression like "feature:pages", "feature:folders", "feature:").
+
+Copy the icons available in the project fr.univnantes.alma.angular into the Viewpoint Specification Project and use them as the style of your folders, modules and pages.
+
+#### Representation Creation Tool
+
+#### Representation Navigation Tool
 
 ### Components Diagram
 

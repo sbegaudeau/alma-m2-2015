@@ -1,8 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="angular" nsURI="http://www.univnantes.fr/alma/angular" nsPrefix="angular">
-  <eClassifiers xsi:type="ecore:EClass" name="Project">
+  <eClassifiers xsi:type="ecore:EClass" name="Project" eSuperTypes="#//Container">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Container" abstract="true">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="folders" upperBound="-1"
+        eType="#//Folder" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Folder" eSuperTypes="#//Container">
     <eStructuralFeatures xsi:type="ecore:EReference" name="modules" upperBound="-1"
         eType="#//Module" containment="true"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="pages" upperBound="-1"
