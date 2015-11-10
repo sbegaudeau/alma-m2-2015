@@ -57,6 +57,14 @@ public String toCamelCase(EObject eObject, String word) {
 	}
 	return word;
 }
+
+private String toU1Case(String word) {
+	if (word != null && word.length() > 0) {
+		return new StringBuilder(word.length()).append(Ascii.toUpperCase(word.charAt(0))).append(
+				word.substring(1)).toString();
+	}
+	return word;
+}
 ```
 
 This code will use Google Guava in order to convert the word in camel case. You can now modify your direct edit tool to replace the value expression "var:arg0" with the expression "service:toCamelCase(arg0)". Add a Java extension to your viewpoint using the qualified name of your Java class (fr.univnantes.alma.angular.internal.services.NamingServices). You should now be able to type "Great abstract class" as the name of a Class using the direct edit and see it transformed to "GreatAbstractClass".
