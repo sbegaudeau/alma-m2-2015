@@ -32,7 +32,7 @@ The Class Diagram should display the classes in your module.
 
 #### Container Creation Tool
 
-In your layer, create a new section named "Elements" with a container creation tool name "New ESClass" inside. This tool should let you create the mapping previously defined. In the begin step of the operation change the context of the operation using the expression "var:container". Your tool should then create a new instance. The creation of an ESClass can only be realized in a module, as such it can only be created in the feature moduleElements of a module. Make sure that your tool create the new instance of "angular.ESClass" in the reference "moduleElements". Then add an operation to set the name of the newly created object to "NewClass". Do not forget to specify the kind of mapping that should be created by the tool.
+In your layer, create a new section named "Elements" with a container creation tool name "New ESClass" inside. This tool should let you create the mapping previously defined. In the begin step of the operation change the context of the operation using the expression "var:container". Your tool should then create a new instance under the change context. The creation of an ESClass can only be realized in a module, as such it can only be created in the feature moduleElements of a module. Make sure that your tool create the new instance of "angular.ESClass" in the reference "moduleElements". Then add an operation to set the name of the newly created object to "NewClass". Do not forget to specify the kind of mapping that should be created by the tool.
 
 Test your tool in the diagram to ensure that it works.
 
