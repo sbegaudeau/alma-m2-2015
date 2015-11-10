@@ -16,7 +16,7 @@ In this project, you will create at least two viewpoints, the first one will be 
 
 ### Class Diagram
 
-Your Class Diagram should reference the metamodel angular.ecore from the workspace in order to tell Eclipse Sirius not to care about other potential metamodels. Your Class Diagram should use the domain class angular.Module since it represents an ES6 module which can contain various pieces of code (including Classes). Then you will create inside the default layer of your Class Diagram named "Class Diagram", a list Container for the concept angular.ESClass named "CD_Class".
+Your Class Diagram should reference the metamodel angular.ecore from the workspace in order to tell Eclipse Sirius not to care about other potential metamodels (add the project of the metamodel in the MANIFEST.MF file and add a reference to your ecore file in the workspace from the Diagram). Your Class Diagram should use the domain class angular.Module since it represents an ES6 module which can contain various pieces of code (including Classes). Then you will create inside the default layer of your Class Diagram named "Class Diagram", a list Container for the concept angular.ESClass named "CD_Class".
 
 #### Style
 
@@ -111,6 +111,12 @@ Display the relationships between the services, the controllers and the directiv
 
 ## Review viewpoint
 
+Create a second viewpoint named "Review" that will be used to review some concepts of your models.
+
 ### Documentation table
 
+Create a table used to display all the ESClass of your model with their properties.
+
 ## Not synchronized Diagram
+
+Make your Class diagram not synchronized (have a look at [Dart Designer](https://github.com/dartdesigner/Dart-Designer/tree/master/bundles/org.obeonetwork.dsl.dart.design/description) for inspiration). For that, add new tools to add and remove existing elements of your model in your diagram and make sure that your node/container mapping of the Class Diagram are not synchronized.
