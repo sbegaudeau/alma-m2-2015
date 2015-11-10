@@ -10,6 +10,8 @@ Create a new Sirius Specification Project named fr.univnantes.alma.angular.desig
 
 Open the file angular.ecore located in the project fr.univnantes.alma.angular and right click on the root concept named Project. Select the action "Create a dynamic instance" and save the model in a file named "angular.xmi" at the root of the modeling project (fr.univnantes.alma.angular.modeling). Now that you have created an empty model from an ecore metamodel, you can open it using "Open With" with the "Sample Reflective Ecore Model Editor" to edit it using a tree-based approach.
 
+In this model, add some Folders under the project with some Modules and ESClasses inside. Give each of them a meaningful name. For example, your project could be named "TestProject" with a folder named "app" inside and two modules with the path "app/users.js" and "app/common.js". In the module "app/users.js", you could have several classes named "NewUser", "Users", "User" and "UpdateUser". Those classes could be used as DTO for the modification of the users of the application.
+
 ## Architecture viewpoint
 
 In this project, you will create at least two viewpoints, the first one will be dedicated to the technical information of your project. Create in the file with the extension '.odesign' in the Viewpoint Specification Project that you have created (fr.univnantes.alma.angular.design) a new viewpoint named "Architecture". This viewpoint should support files with the extension "xmi". Beneath this viewpoint, create a diagram named Class Diagram.
