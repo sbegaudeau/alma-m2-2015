@@ -4,7 +4,7 @@ During this project, you will have to create a Sirius-based designer including m
 
 ## Getting started
 
-Create a new Sirius Specification Project named fr.univnantes.alma.angular.design. This project will contain the configuration of your designer. Create another project, a Modeling Project this time, named fr.univnantes.alma.angular.modeling. In this project, you will create a model, using the Angular metamodel and you will manipulate it using the designer that you will create.
+Create a new Viewpoint Specification Project named fr.univnantes.alma.angular.design. This project will contain the configuration of your designer. Create another project, a Modeling Project this time, named fr.univnantes.alma.angular.modeling. In this project, you will create a model, using the Angular metamodel and you will manipulate it using the designer that you will create.
 
 ## Creating a model
 
