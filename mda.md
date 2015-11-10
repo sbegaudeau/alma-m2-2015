@@ -10,7 +10,7 @@ Create a new Viewpoint Specification Project named fr.univnantes.alma.angular.de
 
 Open the file angular.ecore located in the project fr.univnantes.alma.angular and right click on the root concept named Project. Select the action "Create a dynamic instance" and save the model in a file named "angular.xmi" at the root of the modeling project (fr.univnantes.alma.angular.modeling). Now that you have created an empty model from an ecore metamodel, you can open it using "Open With" with the "Sample Reflective Ecore Model Editor" to edit it using a tree-based approach.
 
-In this model, add some Folders under the project with some Modules and ESClasses inside. Give each of them a meaningful name. For example, your project could be named "TestProject" with a folder named "app" inside and two modules with the path "app/users.js" and "app/common.js". In the module "app/users.js", you could have several classes named "NewUser", "Users", "User" and "UpdateUser". Those classes could be used as DTO for the modification of the users of the application.
+In this model, add some Folders under the project with some Modules and ESClasses inside. To start creating those elements, right click in the model on the root concept Project and select "New Child" to start creating a Folder (repeat on the folder to create the modules, etc). Give each of them a meaningful name. For example, your project could be named "TestProject" with a folder named "app" inside and two modules with the path "app/users.js" and "app/common.js". In the module "app/users.js", you could have several classes named "NewUser", "Users", "User" and "UpdateUser". Those classes could be used as DTO for the modification of the users of the application.
 
 ## Architecture viewpoint
 
