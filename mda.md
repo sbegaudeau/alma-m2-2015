@@ -1,3 +1,10 @@
+# Presentations
+
+[Xtext and Sirius](Xtext_Sirius.pdf)
+[Sirius - Stronger, Faster, Smarter Diagram editors](http://mporhel.github.io/slides/2015_EclipseConEU_Sirius31_StrongerFasterSmarter/#/)
+[Because you can't fix what you don't know is broken](fix.pdf)
+
+
 # Instructions
 
 During this project, you will have to create a Sirius-based designer including multiple viewpoints and representations. You will have to use the metamodel, already defined, in the project fr.univnantes.alma.angular that you will be able to find in this repository.
