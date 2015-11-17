@@ -114,7 +114,7 @@ Create a representation creation tool in your explorer diagram in order to creat
 
 Create a double click tool for the mapping folder. In the begin part of this tool, add a navigation operation to navigate to an Explorer Diagram. Make sure that this diagram will be created if it does not exist.
 
-You should not be able to easily create new folders, pages and modules in your diagram and navigate inside easily.
+You should now be able to easily create new folders, pages and modules in your diagram and navigate inside easily.
 
 ### Components Diagram
 
