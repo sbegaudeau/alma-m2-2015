@@ -110,10 +110,6 @@ Use a conditional style to use the empty folder icon if a folder does not have a
 
 Create a representation creation tool in your explorer diagram in order to create a Class Diagram by right clicking on a Module mapping in your Explorer diagram.
 
-#### Representation Navigation Tool
-
-Create a new tool to navigate to an existing Class Diagram from a module mapping in the explorer diagram
-
 #### Behavior tool
 
 Create a double click tool for the mapping folder. In the begin part of this tool, add a navigation operation to navigate to an Explorer Diagram. Make sure that this diagram will be created if it does not exist.
