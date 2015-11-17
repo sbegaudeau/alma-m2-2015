@@ -118,7 +118,7 @@ You should now be able to easily create new folders, pages and modules in your d
 
 ### Components Diagram
 
-We will now create a brand new kind of Diagram, a component one. This diagram will be defined on a "angular.Project". In this diagram, you will have to display the various NgModules of your project using a free form container mapping. Inside, as child nodes, you will have to display the various services, controllers, and directives available. Add the necessary tools and mappings to create, display and delete those elements.
+We will now create a brand new kind of Diagram, a component one. This diagram will be defined on a "angular.Folder". In this diagram, you will have to display the various NgModules of your project using a free form container mapping. Inside, as child nodes, you will have to display the various services, controllers, and directives available. Add the necessary tools and mappings to create, display and delete those elements.
 
 Display the relationships between the services, the controllers and the directives.
 
