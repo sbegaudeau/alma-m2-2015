@@ -1,8 +1,8 @@
 # Presentations
 
-[Xtext and Sirius](Xtext_Sirius.pdf)
-[Sirius - Stronger, Faster, Smarter Diagram editors](http://mporhel.github.io/slides/2015_EclipseConEU_Sirius31_StrongerFasterSmarter/#/)
-[Because you can't fix what you don't know is broken](fix.pdf)
+- [Xtext and Sirius](https://github.com/sbegaudeau/alma-m2-2015/blob/gh-pages/Xtext_Sirius.pdf)
+- [Sirius - Stronger, Faster, Smarter Diagram editors](http://mporhel.github.io/slides/2015_EclipseConEU_Sirius31_StrongerFasterSmarter/#/)
+- [Because you can't fix what you don't know is broken](https://github.com/sbegaudeau/alma-m2-2015/blob/gh-pages/fix.pdf)
 
 
 # Instructions
